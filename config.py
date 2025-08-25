@@ -3,21 +3,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "21302239")
+    API_HASH  = os.environ.get("API_HASH", "1560930c983fbca6a1fcc8eab760d40d")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7662625579:AAGNlpYIWJrewNzRYA-5PNadfQsj5Uqfx2g") 
 
     # database config
     DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Samir:098765@cluster0.nitglra.mongodb.net/myfiles?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/kOW.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'https://t.me/+Tbkw7GQzcB05M2U9').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002051194704"))
     PORT = int(os.environ.get("PORT", ""))
     
     # wes response configuration     
